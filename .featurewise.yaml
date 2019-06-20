@@ -21,7 +21,7 @@ domains:
       Quorum Reads and Writes: not supported
       Number of Replicas to Read: not supported
       Number of Replicas to Write: not supported
-      Writes with Unavailable Replicas: no rollback: write returns replication error
+      Writes with Unavailable Replicas: "no rollback: write returns replication error"
       Read from Master Only: specified in the client
       Resolving Write Conflicts: supported
     Query Language:
