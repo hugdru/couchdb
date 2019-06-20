@@ -21,24 +21,24 @@ domains:
       Quorum Reads and Writes: not supported
       Number of Replicas to Read: not supported
       Number of Replicas to Write: not supported
-      Writes with Unavailable Replicas: "no rollback: write returns replication error"
+      Writes with Unavailable Replicas: no rollback - write returns replication error
       Read from Master Only: specified in the client
       Resolving Write Conflicts: supported
     Query Language:
       API-based: supported
-      Declarative Query Language: not suppported
+      Declarative Query Language: not supported
       REST/HTTP-based Queries: supported
       Languages Supported: [Java, C/C++, Scala, Javascript]
-      Cursor-based Queries: not suppported
-      JOIN-style queries: not suppported
+      Cursor-based Queries: not supported
+      JOIN-style queries: not supported
       Complex Data Types: [maps, nested structures, arrays]
       Restrict Query Result Set Size: supported
       Key Matching Options: [exact, partial match, regular expressions]
       Sort Options: [ascending, descending]
-      Triggers: not supported
-      Data Object Expiry: not suppported
+      Triggers: [not supported]
+      Data Object Expiry: not supported
     Data Model:
-      Data model: Document
+      Data Model: Document
       Fixed Schema: not required
       Opaque Data Objects: not required
       Hierarchical Data Objects: supported
@@ -49,13 +49,13 @@ domains:
       Query by Partial Keys: not supported
       Query by Non-key Values: not supported
       Map Reduce API: builtin
-      Indexed Text Search: support in a plug-in
+      Indexed Text Search: support in a plug-in (e.g. Solr)
     Data Replication:
       Replication Architecture: master-slave
       Replication for Backup: supported
       Replication across Data Centers: supported by standard data replication mechanisms
-      Replica Writes: to specified replica (configurable)
-      Replica Reads: from specified replica
+      Replica Writes: [to specified replica (configurable)]
+      Replica Reads: [from specified replica]
       Read Repair: not relevant
       Automatic Replica Failure Detection: not supported
       Automatic Failover: not supported
@@ -64,13 +64,13 @@ domains:
     Data Distribution:
       Data Distribution Architecture: [single database only, master-single slave, master-multiple slaves, peer-to-peer]
       Data Distribution Method: assigned key ranges to nodes
-      Automatic Data Rebalancing: administrative rebalancing tools
-      Physical Data Distribution: single cluster, multiple data centers
+      Automatic Data Rebalancing: [administrative rebalancing tools]
+      Physical Data Distribution: [single cluster, multiple data centers]
       Query Architecture: direct shard connection only (resolved in client)
-      Queries using Non-Shard Key Value: not supported
-      Merging Query Results from Multiple Shards: sorted order
+      Queries using Non-Shard Key Value: [not supported]
+      Merging Query Results from Multiple Shards: [sorted order]
     Security:
-      Client Authentication: custom user/password
+      Client Authentication: [custom user/password]
       Server authentication: [shared keyfile, server account credentials]
       Credential Store: in database
       Role Based Security: supported
@@ -81,8 +81,8 @@ domains:
     Admin:
       Configuration Files: multiple
       Node command line access: authenticated
-      Node addition/removal: multiple files
-      Cluster monitoring: snapshot
+      Node addition/removal: [multiple files]
+      Cluster monitoring: [snapshot]
       Dump database configuration: supported
       Database object count: supported
       Physical storage usage: supported
